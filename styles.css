@@ -1,0 +1,43 @@
+body {
+    background-color: lavender;
+}
+
+header{
+    display: grid;
+    justify-items: center;
+}
+header img{
+    background-color: skyblue;
+    width: 75%;
+    
+}
+
+body{
+font-family: monospace;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-areas: 
+    "title title . ."
+    "sect sect sect sect"
+    "form form form form";
+    justify-items: center;
+    
+    margin: 20px;
+    
+}
+
+#select-movie{
+    grid-area: title;
+}
+
+section {
+   grid-area: sect;
+}
+
+form{
+    grid-area: form;
+}
