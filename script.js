@@ -15,7 +15,6 @@ fetch("https://ghibliapi.herokuapp.com/films")
       movieSelect.append(option);
     }
 
-    
     //Display info of movie
     let movieTitle = document.createElement("h3");
     let movieYear = document.createElement("p");
@@ -40,8 +39,6 @@ fetch("https://ghibliapi.herokuapp.com/films")
          <br>
          ${movieYear.textContent}
          <p>${description.textContent}</p>
-
-        
         `;
     });
     
@@ -50,7 +47,7 @@ fetch("https://ghibliapi.herokuapp.com/films")
     submitForm.addEventListener("submit", (e) => {
         e.preventDefault();
         let formValue = e.target["your-review"].value;
-        console.log("hi")
+        console.log(formValue)
         let reviewUL = document.querySelector("ul");
         let newReviewLi = document.createElement("li");
         newReviewLi.textContent = formValue;

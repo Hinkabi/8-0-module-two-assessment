@@ -19,11 +19,13 @@ font-family: monospace;
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 20px 100px 20px;
-    grid-gap: 50px;
+    grid-template-rows: 20px  20px 20px;
+    grid-gap: 10px;
     grid-template-areas: 
     "title . . ."
     "sect sect sect sect "
+    "form form form form"
+
     ;
     margin: 20px;
     justify-content: center;
@@ -38,20 +40,10 @@ section {
    grid-area: sect;
 }
 
-#form-ul {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 20px 100px 20px;
-    
-    grid-template-areas: 
-    "form form form"
-    "ul ul ul ul";
-}
-
-form{
+form {
     grid-area: form;
-}
 
-ul{
-    grid-area: ul;
 }
+    
+
+
