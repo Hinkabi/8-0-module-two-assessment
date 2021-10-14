@@ -19,18 +19,18 @@ font-family: monospace;
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-rows: 20px 100px 20px;
+    grid-gap: 50px;
     grid-template-areas: 
-    "title title . ."
-    "sect sect sect sect"
-    "form form form form";
-    justify-items: center;
-    
+    "title . . ."
+    "sect sect sect sect "
+    ;
     margin: 20px;
+    justify-content: center;
     
 }
 
-#select-movie{
+select{
     grid-area: title;
 }
 
@@ -38,6 +38,20 @@ section {
    grid-area: sect;
 }
 
+#form-ul {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20px 100px 20px;
+    
+    grid-template-areas: 
+    "form form form"
+    "ul ul ul ul";
+}
+
 form{
     grid-area: form;
+}
+
+ul{
+    grid-area: ul;
 }

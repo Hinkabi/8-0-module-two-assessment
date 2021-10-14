@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio Ghilbi Review App</title>
+    <title>Studio Ghibli Review App</title>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div>
         <header>
-            <h1>Studio Ghilbi Review App</h1>
-            <img src="images/ghibli-logo.png" alt="totoro header">
+            <h1>Ghibli Review App</h1>
+            <img src="./images/ghibli-logo.png">
         </header>
     </div>
     <main>
-        <div id="select-movie">
+        <div id="select-movie"></div>
             <select>
-                <option value="default">Select a Movie</option>
+                <option>Select a Movie</option>
             </select>
         </div>
         <section id="display-info">
            <!-- this is a section -->
         </section>
-        <form>
-            <label for="movie-review">Your Review</label>
-            <input type="text">
-            <button type="submit">Submit Review</button>
-        </form>
-        <ul>
+        <div id="form-ul"> 
+            <form>
+                <label for="movie-review">Your Review</label>
+                <input id="your-review" type="text">
+                <input id="submit-button" type="submit" value="submit">
+                <!-- <button type="submit">Submit Review</button> -->
+            </form>
+            <ul>
 
-        </ul>
+            </ul>
+        </div>
     </main>
 </body>
 </html>
